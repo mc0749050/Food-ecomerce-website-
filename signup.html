@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Sign Up</title>
+  <link rel="stylesheet" href="signup.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+  <div class="mainbody">
+  <div class="boxDesgin"></div>
+  
+  <div class="main">
+    <p class="signupText">Signup</p>
+    
+    <div class="inputDiv">
+    <input type="email" placeholder="enter your email">
+    <input type="text" placeholder="enter your username">
+    <input type="number" placeholder="enter your mobile no.">
+    <input type="password" placeholder="enter your password" id="password">
+        <i id="EyePassword" class="bi bi-eye"></i>
+    </div>
+    
+        <span>Does have an account?</span><a href="login.html">Login</a>
+        <br>
+        <a id="signupA" href="#">Sign Up</a>
+    <br>
+  </div>
+  </div>
+  
+  
+    <script>
+    const togglePassword = document.querySelector('#EyePassword');
+  const password = document.querySelector('#password');
+
+  togglePassword.addEventListener('click', function (e) {
+    // toggle the type attribute
+    const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+    password.setAttribute('type', type);
+    
+    togglePassword.classList.toggle("bi-eye-slash");
+});
+
+  </script>
+</body>
+</html>

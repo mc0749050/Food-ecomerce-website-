@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Order</title>
+    <link rel="stylesheet" href="order.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+  <div class="head">
+    <div class="searchbar">
+      <input  id="search" list="list" type="text" placeholder="search">
+     
+    </div>
+    <a href="#"><i onclick="opencart()" class="bi bi-cart"></i></a>
+  </div>
+  <div class="container">
+    
+    <!-- Item 1 -->
+    
+    <div class="item pizza">
+       <div class="img"><img src="https://img.freepik.com/premium-photo/isolated-pizza-with-mushrooms-olives_219193-8149.jpg?w=740" alt=""></div>
+     
+      <p class="name">Pizza</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span> 24 ratings<span></p>
+      <p class="price">₹250</p>
+      <button onclick="addToCart(0)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 2 -->
+    
+    <div class="item sandwich">
+            <div class="img"><img src="https://as1.ftcdn.net/v2/jpg/00/63/14/82/1000_F_63148210_6CW92adBmtCT8s96W0IYPJpkZsPh8IQ5.jpg" alt=""></div>
+      
+            <p class="name">Sandwich</p>
+            <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span> 65 ratings<span></p>
+            <p class="price">₹90</p>
+            <button onclick="addToCart(1)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 3 -->    
+    
+    <div class="item burger">
+      <div class="img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+      
+      <p class="name">Burger</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 172 ratings<span></p>
+      <p class="price">₹110</p>
+      <button onclick="addToCart(2)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 4 -->    
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/free-photo/top-close-up-view-rice-plate-rice-dried-fruits_140725-78711.jpg?w=740&t=st=1700379548~exp=1700380148~hmac=a01d5b9919c38c511ea27b3c550473029c291e90eb36f1a401523f750f1b9111" alt=""></div>
+      
+      <p class="name">Rice</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span> 40 ratings<span></p>
+      <p class="price">₹260</p>
+      <button onclick="addToCart(3)" class="addToCart">Add to cart</button>
+      </div>
+    
+    <!-- Item 5 -->    
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/indian-hindu-veg-thali-food-platter-selective-focus_466689-35126.jpg?w=740" alt=""></div>
+      
+      <p class="name">Special Thali</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 172 ratings<span></p>
+      <p class="price">₹399</p>
+      <button onclick="addToCart(4)" class="addToCart">Add to cart</button>
+      </div>
+      
+    <!-- Item 6  -->
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?w=740&t=st=1700380480~exp=1700381080~hmac=acc5200eab7b31a56b5515b6cf070197ae088903d89cd0ef4646763226cd74d7" alt=""></div>
+      
+      <p class="name">Pasta</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 128 ratings<span></p>
+      <p class="price">₹70</p>
+      <button onclick="addToCart(5)" class="addToCart">Add to cart</button>
+      </div>
+   <!-- Item 7  --> 
+   
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/3262-tomato-soup-with-tofu-isolated-transparent-background_932774-3114.jpg?w=740" alt=""></div>
+      
+      <p class="name">Sahi paneer</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span> 72 ratings<span></p>
+      <p class="price">₹280</p>
+      <button onclick="addToCart(6)" class="addToCart">Add to cart</button>
+      </div>
+      
+  <!-- Item 8 --> 
+  
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl_466689-71909.jpg?w=740" alt=""></div>
+      
+      <p class="name">Gulab jamun</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 53 ratings<span></p>
+      <p class="price">₹490</p>
+      <button onclick="addToCart(7)" class="addToCart">Add to cart</button>
+      </div>
+      
+          <!-- Item 1 -->
+    
+    <div class="item">
+       <div class="img"><img src="https://img.freepik.com/premium-photo/isolated-pizza-with-mushrooms-olives_219193-8149.jpg?w=740" alt=""></div>
+     
+      <p class="name">Pizza</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span> 24 ratings<span></p>
+      <p class="price">₹250</p>
+      <button onclick="addToCart(0)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 2 -->
+    
+    <div class="item">
+            <div class="img"><img src="https://as1.ftcdn.net/v2/jpg/00/63/14/82/1000_F_63148210_6CW92adBmtCT8s96W0IYPJpkZsPh8IQ5.jpg" alt=""></div>
+      
+            <p class="name">Sandwich</p>
+            <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span> 65 ratings<span></p>
+            <p class="price">₹90</p>
+            <button onclick="addToCart(1)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 3 -->    
+    
+    <div class="item">
+      <div class="img"><img src="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?q=80&w=699&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt=""></div>
+      
+      <p class="name">Burger</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 172 ratings<span></p>
+      <p class="price">₹110</p>
+      <button onclick="addToCart(2)" class="addToCart">Add to cart</button>
+    </div>
+    
+    <!-- Item 4 -->    
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/free-photo/top-close-up-view-rice-plate-rice-dried-fruits_140725-78711.jpg?w=740&t=st=1700379548~exp=1700380148~hmac=a01d5b9919c38c511ea27b3c550473029c291e90eb36f1a401523f750f1b9111" alt=""></div>
+      
+      <p class="name">Rice</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><span> 40 ratings<span></p>
+      <p class="price">₹260</p>
+      <button onclick="addToCart(3)" class="addToCart">Add to cart</button>
+      </div>
+    
+    <!-- Item 5 -->    
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/indian-hindu-veg-thali-food-platter-selective-focus_466689-35126.jpg?w=740" alt=""></div>
+      
+      <p class="name">Special Thali</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 172 ratings<span></p>
+      <p class="price">₹399</p>
+      <button onclick="addToCart(4)" class="addToCart">Add to cart</button>
+      </div>
+      
+    <!-- Item 6  -->
+    
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/free-photo/penne-pasta-tomato-sauce-with-chicken-tomatoes-wooden-table_2829-19739.jpg?w=740&t=st=1700380480~exp=1700381080~hmac=acc5200eab7b31a56b5515b6cf070197ae088903d89cd0ef4646763226cd74d7" alt=""></div>
+      
+      <p class="name">Pasta</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 128 ratings<span></p>
+      <p class="price">₹70</p>
+      <button onclick="addToCart(5)" class="addToCart">Add to cart</button>
+      </div>
+   <!-- Item 7  --> 
+   
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/3262-tomato-soup-with-tofu-isolated-transparent-background_932774-3114.jpg?w=740" alt=""></div>
+      
+      <p class="name">Sahi paneer</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><span> 72 ratings<span></p>
+      <p class="price">₹280</p>
+      <button onclick="addToCart(6)" class="addToCart">Add to cart</button>
+      </div>
+      
+  <!-- Item 8 --> 
+  
+    <div class="item">
+      <div class="img"><img src="https://img.freepik.com/premium-photo/indian-sweet-food-gulab-jamun-served-round-ceramic-bowl_466689-71909.jpg?w=740" alt=""></div>
+      
+      <p class="name">Gulab jamun</p>
+      <p class="rating"><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i><i class="bi bi-star"></i><i class="bi bi-star"></i><span> 53 ratings<span></p>
+      <p class="price">₹490</p>
+      <button onclick="addToCart(7)" class="addToCart">Add to cart</button>
+      </div>
+      
+
+  </div>
+  
+  
+    <div id="cartDiv">
+    <i onclick="closecart()" class="fa-solid fa-xmark"></i>
+    
+    <img id="noitemimg" src="https://img.freepik.com/free-vector/supermarket-shopping-cart-concept-illustration_114360-22408.jpg?t=st=1717735490~exp=1717739090~hmac=5a498a42cc7818ed45a17316e37abc5abf519feab550049ad8c3f2cb49f3c5f1&w=740" alt="https://img.freepik.com/free-vector/supermarket-shopping-cart-concept-illustration_114360-22408.jpg?t=st=1717735490~exp=1717739090~hmac=5a498a42cc7818ed45a17316e37abc5abf519feab550049ad8c3f2cb49f3c5f1&w=740">
+    
+    <div id="cartDivItem" class="cartDivItem">
+    <div class="bl" id="cartItem">
+      <img src="https://img.freepik.com/premium-photo/isolated-pizza-with-mushrooms-olives_219193-8149.jpg?w=740" alt="#">
+      <p class="dishName">Pizza</p>
+      <p class="details">Food contains nutrients—substances essential for the growth, <br> repair, and maintenance of body tissues and for the regulation of vital processes</p>
+      <p class="price">₹250</p>
+      <div class="quantity">
+        <button>-</button>
+        <button>1</button>
+        <button>+</button>
+      </div>
+      <button id="cartItemRemove">Remove</button>
+      <button id="cartItemOrder">Order</button>
+    </div>
+   </div>
+  </div>
+  
+  <div id="popup">
+    <p>Your order is placed !</p>
+  </div>
+  
+
+  <script src="main.js">main.js</script>
+  
+</body>
+</html>
